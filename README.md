@@ -1,113 +1,68 @@
-# Harry-Potter-Wiki
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Overview
-Harry Potter Wiki 
+## Available Scripts
 
-This app is used to get infromation on your favoirte harry Potter chareaters and houses 
+In the project directory, you can run:
 
-## Wireframes
-Use the Wireframes section to display desktop, tablet and mobile views.
+### `npm start`
 
+Runs the app in the development mode.<br />
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
+The page will reload if you make edits.<br />
+You will also see any lint errors in the console.
 
-Desktop Home
-![](https://i.imgur.com/7kJEgA9.png)
+### `npm test`
 
-Desktop characters
-![](https://i.imgur.com/8Erbm5R.png)
+Launches the test runner in the interactive watch mode.<br />
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-Desktop Houses 
-![](https://i.imgur.com/JwcZysQ.png)
+### `npm run build`
 
-Desktop Spells
-![](https://i.imgur.com/h1xR8Yy.png)
+Builds the app for production to the `build` folder.<br />
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
+The build is minified and the filenames include the hashes.<br />
+Your app is ready to be deployed!
 
-## MVP
-The Minimum Viable Product should be a well-planned and easily-communicated product, ensuring that the client's deliverable will be achievable and meet specifications within the time frame estimated.
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-The Project Title MVP 
-- Getting the information from my api to the page correctly
-- making sure my links route you to the right page 
-- having 6 componets 
-- using story book 
+### `npm run eject`
 
+**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-## Goals
-This app is an informative app that gets you up to date with your Harry Potter history 
+If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-## Libraries
-Story Book looking to make some buttons and other housing for characters picture 
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-## Library	Description
-- React Router	
-- Story Book
+You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-Use the Data Section to define the API(s) you will be consuming for your project, inluding sample URL queries.
+## Learn More
 
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-Harry Potter api (https://www.potterapi.com/)
-JSON data sample from your API goes here.
+To learn React, check out the [React documentation](https://reactjs.org/).
 
-## Component Hierarchy
-Use this section to define your React components and the data architecture of your app.
+### Code Splitting
 
-src
-|__ assets/
-     |__ data-tests
-     |__ fonts
-      |__ graphics
-      |__ images
-      |__ mockups
-|__ components/
-      |__ Header.jsx
-       |__ Home.jsx
-       |__ chareters.jsx
-       |__ spell.jsx
-       |__ houses.jsx
-       |__ Footer.jsx
+This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
 
-## Component Breakdown
-Use this section to go into further depth regarding your components, including breaking down the components as stateless or stateful, and considering the passing of data between those components.
+### Analyzing the Bundle Size
 
-Component	Type	State	Props	Description
-- Header	functional	The header will contain the navigation and logo.
-- Navigation	functional	The navigation will provide a link to each of the pages.
-- Chareters will show you all Chareters in the Harry Potter universe
-- Spells will house all spells used in each harry potter  
-- houses will have all 4 houses and a random house picker for the user 
-- Footer	functional	The footer will show info about me and a link to my portfolio.
+This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
 
+### Making a Progressive Web App
 
-## Component Estimates
-Use this section to estimate the time necessary to build out each of the components you've described above.
+This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
 
-Time frames are key to the development cycle. You have limited time to code your app, and your estimates can then be used to evalute possibilities of your MVP and post-MVP based on time needed. It's best you assume an additional hour for each component, as well as a few hours added to the total time, to play it safe.
+### Advanced Configuration
 
+This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
 
-| Component | Priority | Estimated Time | Time Invested | Actual Time |
-| --- | :---: |  :---: | :---: | :---: |
-| Getting api | H | 2hrs| 0min | 0mins |
-| Create components | H | 2hrs| 0hrs | 0hrs |
-|rendering info | H | 5hrs| 0hrs | 0hrs |
-| Create CRUD Actions | H | 5hrs| hrs | hrs |
-|basic style css | H | 2hrs| 0hrs | 0hrs |
-| story Book | H | 4hrs| 0hrs | 0hrs |
-| linting | H | 2hrs| 0hrs | 0hrs |
+### Deployment
 
-| Total | H | 23hrs| 0hrs | 0hrs |
+This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
 
+### `npm run build` fails to minify
 
-## Post-MVP
-Use this section to document ideas you've had that would be fun (or necessary) for your Post-MVP. This will be helpful when you return to your project after graduation!
-
-Add user account and auth capabilities.
-Utilize the Giphy API to welcome new users with funny gifs.
-
-Project Delivery
-Code Showcase
-Use this section to include a brief code snippet of functionality that you are proud of and a brief description.
-
-code snippet here
-Code Issues & Resolutions
-Use this section to list of all major issues encountered and their resolution, if you'd like.
+This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
