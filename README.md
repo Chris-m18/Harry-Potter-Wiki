@@ -87,14 +87,15 @@ Time frames are key to the development cycle. You have limited time to code your
 
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-| Getting api | H | 1hrs| 0min | 0mins |
-| Create components | H | 1hrs| 0hrs | 0hrs |
-|rendering info | H | 3hrs| 0hrs | 0hrs |
-| Create CRUD Actions | H | 3hrs| hrs | hrs |
+| Getting api | H | 2hrs| 0min | 0mins |
+| Create components | H | 2hrs| 0hrs | 0hrs |
+|rendering info | H | 5hrs| 0hrs | 0hrs |
+| Create CRUD Actions | H | 5hrs| hrs | hrs |
 |basic style css | H | 2hrs| 0hrs | 0hrs |
-| story Book | H | 3hrs| 0hrs | 0hrs |
+| story Book | H | 4hrs| 0hrs | 0hrs |
+| linting | H | 2hrs| 0hrs | 0hrs |
 
-| Total | H | 14hrs| 0hrs | 0hrs |
+| Total | H | 23hrs| 0hrs | 0hrs |
 
 
 ## Post-MVP
