@@ -1,0 +1,9 @@
+
+.header{
+  color: #ffc500;
+  background-color: black;
+}
+.link{
+  display: flex;
+  justify-content: space-evenly;
+}
