@@ -5,11 +5,11 @@ import { Link } from 'react-router-dom'
 export default function Characters(props) {
   return (
     <div className="characters">
-      {props.charactersArray.map(Characters => (
-        <Link>
+      {props.charactersArray.map(Character => (
+        <Link to={'/characters/' + Character.name}>
         <div className="character">
-          <img src={Characters.image} alt="" s />
-          <h3>{Characters.name}</h3>
+          <img src={Character.image} alt="" s />
+          <h3>{Character.name}</h3>
           </div>
           </Link>
         

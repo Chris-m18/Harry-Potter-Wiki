@@ -1,23 +1,30 @@
 import React from 'react'
-import { Link } from "react-router-dom"
+// import { Link } from "react-router-dom"
 import { withRouter } from "react-router-dom"
 
- function Characterdetail(props) {
-  return (<>
-  
-         <div className="detail">
-      {/* {props.details.map(Characterdetail => (
-        <Link to={`/Characterdetail/${Characterdetail.name}`}>
-        <div className="stuff">
-          <img src={Characterdetail.image} alt="" s />
-          <h3>{Characterdetail.name}</h3>
-          </div>
-          </Link>
-        
-        ))} */}
+function Characterdetail(props) {
+  const det = props.details.find(details => {
+    return details.name == props.match.params.name
+  })
+  console.log(det)
+  return (<> 
+    {det &&
+      <div >
+      <h1>{det.name}</h1>
+        <h3>Actor:  {det.actor}</h3>
+      <h3>Date of Birth:  {det.dateOfBirth}</h3>
+      <h3>House:  {det.house}</h3>
+      <h3>Species:  {det.species}</h3>
+      <img src= {det.image} />
+      
+   
+ 
 
-    </div>
+      </div>
+    }
     </>
-  )
+    )
 }
-export default withRouter (Characterdetail)
+
+export default withRouter(Characterdetail)
+

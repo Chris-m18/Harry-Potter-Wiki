@@ -22,15 +22,14 @@ export default class App extends Component {
   }
   componentDidMount = async () => {
     const respond = await axios.get('http://hp-api.herokuapp.com/api/characters')
-    const detail = await axios.get('http://hp-api.herokuapp.com/api/characters')
+    // const detail = await axios.get('http://hp-api.herokuapp.com/api/characters')
     const houses = await axios.get(`https://www.potterapi.com/v1/houses?key=${pass}`)
     const spells = await axios.get(`https://www.potterapi.com/v1/spells?key=${pass}`)
 
-    console.log(detail)
+console.log(spells)
 
     this.setState({
       characters: respond.data,
-      detail: detail.data.name,
       houses: houses.data,
       spells: spells.data
     })
@@ -49,11 +48,15 @@ export default class App extends Component {
           <Route path='/' exact>
             <Home />
           </Route>
-          <Route path='/Characters'>
+          <Route path='/Characters' exact>
             <Characters charactersArray={this.state.characters} />
           </Route>
-          <Characterdetail details={this.state.Characterdetail} />
-          <Spells spellArray={this.state.Spells} />
+          <Route path='/characters/:name' >
+            <Characterdetail details={this.state.characters} />
+            </Route>
+        <Route path='/Spells'>
+            <Spells spellArray={this.state.spells} />
+            </Route>
 
 
           <Route path='/House'>
