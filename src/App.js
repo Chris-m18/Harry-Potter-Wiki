@@ -4,6 +4,7 @@ import axios from "axios";
 import Characters from './component/Characters';
 import Characterdetail from './component/Characterdetail'
 import House from './component/House'
+import Spells from  './component/Spells'
 import Header from './component/Header'
 import Home from "./component/Home"
 
@@ -16,35 +17,46 @@ export default class App extends Component {
   state = {
     characters: [],
     spells: [],
-    houses: []
+    houses: [],
+    detail: []
   }
   componentDidMount = async () => {
     const respond = await axios.get('http://hp-api.herokuapp.com/api/characters')
+    const detail = await axios.get('http://hp-api.herokuapp.com/api/characters')
     const houses = await axios.get(`https://www.potterapi.com/v1/houses?key=${pass}`)
     const spells = await axios.get(`https://www.potterapi.com/v1/spells?key=${pass}`)
 
-    console.log(respond, houses, spells)
+    console.log(detail)
 
     this.setState({
       characters: respond.data,
+      detail: detail.data.name,
       houses: houses.data,
       spells: spells.data
     })
+
+
   }
+
   render() {
     return (
       <>
-        <Route path='/' exact>
-          <Home />
-        </Route>
+
 
         <Header />
 
         <div className='app'>
+          <Route path='/' exact>
+            <Home />
+          </Route>
+          <Route path='/Characters'>
+            <Characters charactersArray={this.state.characters} />
+          </Route>
+          <Characterdetail details={this.state.Characterdetail} />
+          <Spells spellArray={this.state.Spells} />
 
-          <Characters charactersArray={this.state.characters} />
-          <Characterdetail />
-          <Route path='/houses/:housesId'>
+
+          <Route path='/House'>
             <House housesArray={this.state.houses} />
           </Route>
 
