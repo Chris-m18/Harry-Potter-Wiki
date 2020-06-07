@@ -1,0 +1,35 @@
+
+
+.characters{
+display:flex;
+justify-content: space-evenly;
+flex-wrap: wrap;
+background-image: url(https://files.wallpaperpass.com/2019/10/harry%20potter%20wallpaper%20110%20-%202560x1440.png);
+background-size: cover;
+background-position: center;
+
+}
+
+.character{
+  width: 10%;
+  height: 10%;
+  margin-top: 2em;
+  
+  
+}
+
+img{
+  width: 300px;
+  height: 300px;
+  opacity: 0.5;
+  
+ 
+ 
+}
+img:hover {
+  opacity: 1.0;
+}
+
+h3{
+  text-decoration: none;
+}

@@ -6,12 +6,13 @@ export default function Header() {
   return (<>
    
       <div className="header">
-        <h3>Harry Potter Wiki</h3>
+      <header>Harry Potter Wiki </header>
     </div>
+   
      <div className="link">
-      <Link to='./Home'>
+      {/* <Link to='./Home'>
       Home
-      </Link>
+      </Link> */}
       <Link to='./Characters'>
        Characters
       </Link>
@@ -21,7 +22,7 @@ export default function Header() {
       <Link to='./Spells'>
         Spells
         </Link>
-      
+       
     </div>
     </>
   )

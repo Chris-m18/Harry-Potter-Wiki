@@ -1,9 +1,20 @@
 
-.header{
-  color: #ffc500;
-  background-color: black;
+.header {
+  padding: 20px;
+  text-align: center;
+  background: rgb(37, 36, 36);
+  color: rgb(223,169,44);
+  font-size: 50px;
+  font-family: 'Marck Script', cursive, bold;
 }
+
 .link{
   display: flex;
   justify-content: space-evenly;
+  font-family: 'Marck Script', cursive;
+  background-color: rgb(37, 36, 36);
+color: whitesmoke;
+  
+
 }
+

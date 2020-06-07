@@ -7,9 +7,17 @@ import House from './component/House'
 import Spells from  './component/Spells'
 import Header from './component/Header'
 import Home from "./component/Home"
-
+import Housedetails from "./component/Housedetails"
+import  Footer from './component/Footer'
 import './component/css/app.css'
 import './component/css/header.css'
+import './component/css/home.css'
+import './component/css/characters.css'
+import './component/css/charactersdetail.css'
+import './component/css/houses.css'
+import './component/css/housedetails.css'
+import './component/css/spell.css'
+import './component/css/footer.css'
 
 const pass = "$2a$10$LvvwMhAw2Yrc.oZ5a8XIXuVEg2vQS5ub0wmr9lsQZKuKQpWUwqo9a"
 
@@ -22,11 +30,10 @@ export default class App extends Component {
   }
   componentDidMount = async () => {
     const respond = await axios.get('http://hp-api.herokuapp.com/api/characters')
-    // const detail = await axios.get('http://hp-api.herokuapp.com/api/characters')
     const houses = await axios.get(`https://www.potterapi.com/v1/houses?key=${pass}`)
     const spells = await axios.get(`https://www.potterapi.com/v1/spells?key=${pass}`)
 
-console.log(spells)
+console.log(houses)
 
     this.setState({
       characters: respond.data,
@@ -42,26 +49,37 @@ console.log(spells)
       <>
 
 
-        <Header />
+     
 
         <div className='app'>
+          <Header />
+          
+          
           <Route path='/' exact>
             <Home />
           </Route>
+         
           <Route path='/Characters' exact>
             <Characters charactersArray={this.state.characters} />
           </Route>
+         
           <Route path='/characters/:name' >
             <Characterdetail details={this.state.characters} />
             </Route>
-        <Route path='/Spells'>
+       
+          <Route path='/Spells'>
             <Spells spellArray={this.state.spells} />
-            </Route>
-
-
+          </Route>
+          
           <Route path='/House'>
             <House housesArray={this.state.houses} />
           </Route>
+
+          <Route path='/houses/:name'>
+            <Housedetails loco={this.state.houses} />
+          </Route>
+
+          <Footer />
 
         </div>
 

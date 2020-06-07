@@ -1,5 +1,4 @@
-import React from 'react'
-// import { Link } from "react-router-dom"
+import React from 'react' 
 import { withRouter } from "react-router-dom"
 
 function Characterdetail(props) {
@@ -9,7 +8,7 @@ function Characterdetail(props) {
   console.log(det)
   return (<> 
     {det &&
-      <div >
+      <div className='details' >
       <h1>{det.name}</h1>
         <h3>Actor:  {det.actor}</h3>
       <h3>Date of Birth:  {det.dateOfBirth}</h3>

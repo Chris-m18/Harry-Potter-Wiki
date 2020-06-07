@@ -1,0 +1,20 @@
+.tricks{
+display:flex;
+justify-content: space-evenly;
+flex-wrap: wrap;
+background-color: rgb(37, 36, 36);
+}
+
+.treat{
+  border: 2px solid black;
+border-radius: 5%;
+width: 22%;
+margin-top: 2em;
+background-image: url('https://media.giphy.com/media/3o72FdKYY1NDpP8WJy/giphy.gif');
+color: whitesmoke;
+opacity: 0.5;
+}
+
+.treat:hover {
+  opacity: 1.0;
+}
