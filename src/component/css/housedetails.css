@@ -1,4 +1,10 @@
 .detail{
   color: rgb(223,169,44);
-  background-color: rgb(37, 36, 36);
+  background-color: rgb(31, 31, 31);
+  padding-bottom: 2em;
+}
+.detail h1 {
+  margin: 0;
+  padding-top: 2em;
+
 }

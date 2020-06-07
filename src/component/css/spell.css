@@ -2,7 +2,7 @@
 display:flex;
 justify-content: space-evenly;
 flex-wrap: wrap;
-background-color: rgb(37, 36, 36);
+background-color: rgb(31, 31, 31);
 }
 
 .treat{

@@ -1,5 +1,6 @@
 import React from 'react' 
 import { withRouter } from "react-router-dom"
+import './css/charactersdetail.css'
 
 function Characterdetail(props) {
   const det = props.details.find(details => {
@@ -10,10 +11,10 @@ function Characterdetail(props) {
     {det &&
       <div className='details' >
       <h1>{det.name}</h1>
-        <h3>Actor:  {det.actor}</h3>
-      <h3>Date of Birth:  {det.dateOfBirth}</h3>
-      <h3>House:  {det.house}</h3>
-      <h3>Species:  {det.species}</h3>
+        <p>Actor:  {det.actor}</p>
+      <p>Date of Birth:  {det.dateOfBirth}</p>
+      <p>House:  {det.house}</p>
+      <p>Species:  {det.species}</p>
       <img src= {det.image} />
       
    

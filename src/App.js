@@ -10,14 +10,7 @@ import Home from "./component/Home"
 import Housedetails from "./component/Housedetails"
 import  Footer from './component/Footer'
 import './component/css/app.css'
-import './component/css/header.css'
-import './component/css/home.css'
-import './component/css/characters.css'
-import './component/css/charactersdetail.css'
-import './component/css/houses.css'
-import './component/css/housedetails.css'
-import './component/css/spell.css'
-import './component/css/footer.css'
+
 
 const pass = "$2a$10$LvvwMhAw2Yrc.oZ5a8XIXuVEg2vQS5ub0wmr9lsQZKuKQpWUwqo9a"
 
@@ -54,7 +47,7 @@ console.log(houses)
         <div className='app'>
           <Header />
           
-          
+
           <Route path='/' exact>
             <Home />
           </Route>

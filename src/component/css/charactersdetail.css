@@ -1,5 +1,12 @@
 .details{
-  background-color: rgb(37, 36, 36);
+  background-color: rgb(31, 31, 31);
   color:rgb(223,169,44);
+padding-bottom: 2em;
+padding-top: 2em;
 
+}
+
+.details h1{
+  margin: 0;
+  
 }

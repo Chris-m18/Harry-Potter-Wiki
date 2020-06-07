@@ -1,8 +1,14 @@
 .houses{
   color: rgb(223,169,44);
-  background-color: rgb(37, 36, 36);
+  background-color: rgb(31, 31, 31);
+  padding-top: 2em;
 }
 
 .house{
-  background-color: rgb(37, 36, 36);
+  background-color: rgb(31, 31, 31);
+  padding-bottom: 2em;
+}
+
+.house h3{
+  margin: 0;
 }
