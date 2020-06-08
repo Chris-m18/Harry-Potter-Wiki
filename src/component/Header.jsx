@@ -14,13 +14,13 @@ export default function Header() {
       {/* <Link to='./Home'>
       Home
       </Link> */}
-      <Link to='./Characters'>
+      <Link to='/Characters'>
        Characters
       </Link>
-      <Link to='./House'>
+      <Link to='/House'>
         House
       </Link>
-      <Link to='./Spells'>
+      <Link to='/Spells'>
         Spells
         </Link>
        
