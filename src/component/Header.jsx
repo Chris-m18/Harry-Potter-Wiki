@@ -11,10 +11,8 @@ export default function Header() {
     </div>
    
      <div className="link">
-      {/* <Link to='./Home'>
-      Home
-      </Link> */}
-      <Link to='/Characters'>
+ 
+     <Link to='/Characters'>
        Characters
       </Link>
       <Link to='/House'>
