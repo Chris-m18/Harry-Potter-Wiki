@@ -13,6 +13,7 @@ margin-top: 2em;
 background-image: url('https://media.giphy.com/media/3o72FdKYY1NDpP8WJy/giphy.gif');
 color: whitesmoke;
 opacity: 0.5;
+color: rgb(223,169,44);
 }
 
 .treat:hover {
