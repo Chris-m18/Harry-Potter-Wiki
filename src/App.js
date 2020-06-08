@@ -22,7 +22,7 @@ export default class App extends Component {
     detail: []
   }
   componentDidMount = async () => {
-    const respond = await axios.get('http://hp-api.herokuapp.com/api/characters')
+    const respond = await axios.get('https://hp-api.herokuapp.com/api/characters')
     const houses = await axios.get(`https://www.potterapi.com/v1/houses?key=${pass}`)
     const spells = await axios.get(`https://www.potterapi.com/v1/spells?key=${pass}`)
 
