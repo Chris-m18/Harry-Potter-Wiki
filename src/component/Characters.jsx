@@ -8,7 +8,7 @@ export default function Characters(props) {
   return (
     <div className="characters">
       {props.charactersArray.map(Character => (
-        <Link to={'/characters/' + Character.name}>
+        <Link className="harry" to={'/characters/' + Character.name}>
         <div className="character">
           <img src={Character.image} alt="" s />
           <h3>{Character.name}</h3>

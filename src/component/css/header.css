@@ -9,12 +9,34 @@
 }
 
 .link{
+font-size: large;
   display: flex;
   justify-content: space-evenly;
   font-family: 'Marck Script', cursive;
-  background-color: rgb(37, 36, 36);
+  /* background-color: rgb(37, 36, 36); */
 color: whitesmoke;
-  
 
 }
+
+.one{
+  text-decoration: none;
+  color: rgb(223,169,44);
+
+
+}
+
+.two{
+  text-decoration: none;
+  color: rgb(223,169,44);
+
+}
+
+.three{
+  text-decoration: none;
+  color: rgb(223,169,44);
+
+}
+
+
+
 

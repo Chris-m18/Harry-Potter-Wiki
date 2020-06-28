@@ -8,21 +8,22 @@ export default function Header() {
    
       <div className="header">
       <header>Harry Potter Wiki </header>
-    </div>
-   
+
      <div className="link">
  
-     <Link to='/Characters'>
+     <Link className="one" to='/Characters'>
        Characters
       </Link>
-      <Link to='/House'>
+      <Link className="two" to='/House'>
         House
       </Link>
-      <Link to='/Spells'>
+      <Link className="three" to='/Spells'>
         Spells
         </Link>
        
-    </div>
+      </div>
+      </div>
+   
     </>
   )
 }
